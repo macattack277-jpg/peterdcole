@@ -704,7 +704,7 @@ body {
     }
 
     .contact-page {
-        padding: 6rem 1rem 3rem;
+        padding: 8rem 1rem 3rem;
     }
     
     /* Hide cursor on mobile */
@@ -738,6 +738,47 @@ body {
     }
     
     .work-index {
-        padding: 6rem 1rem 4rem;
+        padding: 8rem 1rem 4rem;
+    }
+    
+    /* Lower titles on mobile to be visible below banner */
+    .work-title {
+        margin-top: 2rem;
+        font-size: clamp(3rem, 8vw, 6rem);
+    }
+    
+    .info-main-title {
+        margin-top: 2rem;
+    }
+    
+    /* Increase padding on info page */
+    .info-page {
+        padding: 8rem 1rem 2rem;
+    }
+    
+    /* Hide Contact link on mobile, make nav more compact */
+    .nav {
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    
+    .nav-link {
+        font-size: 0.65rem;
+        padding: 0.3rem 0;
+    }
+    
+    /* Hide the Home link on mobile, show Contact instead */
+    .nav-link:first-child {
+        display: none;
+    }
+    
+    /* Make banner content more compact */
+    .banner-content {
+        padding: 0.8rem 1rem;
+    }
+    
+    .site-name {
+        font-size: 0.9rem;
     }
 }
