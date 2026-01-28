@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sculpture/Desk - Peter D. Cole</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header class="site-header banner">
+        <div class="banner-content">
+            <a href="../index.html" class="site-name">PETER D. COLE</a>
+            <nav class="nav">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../work.html" class="nav-link">Work</a>
+                <a href="#info" class="nav-link">Info</a>
+                <a href="https://cdn.sanity.io/files/cf2wup73/production/71df125e6670152a9466108956775f98da293554.pdf" target="_blank" class="nav-link">Available Works</a>
+                <a href="../contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <section class="artwork-detail">
+        <div class="artwork-container">
+            <div class="artwork-image">
+                <img src="../images/2015cdab24fd1104edf6d202d5324a28edf9a827-3402x2717.jpg.jpeg" alt="Sculpture/Desk">
+            </div>
+            <div class="artwork-info">
+                <h1 class="artwork-title">Sculpture/Desk</h1>
+                <p class="artwork-year">1990</p>
+                <div class="artwork-details">
+                    <p class="artwork-materials">Painted and Polished Timber and Bronze</p>
+                    <p class="artwork-dimensions">211 x 318.5 cms</p>
+                </div>
+                <p>I collaborated with a skilled wood worker to create a piece that blends art and function. Our collaboration resulted in a table design. The bronze cone, a focal point, has since aged over time. The pillar also unfolds to reveal a cabinet. This furniture-sculpture hybrid stands as a testament to post-Memphis design, it captures the essence of our engagement with Italian design upon our return from Italy.</p>
+                <a href="../work.html" class="back-link">← Back to Work</a>
+            </div>
+        </div>
+    </section>
+    <script>
+        // Custom Cursor
+        const cursor = document.createElement('div');
+        cursor.className = 'custom-cursor';
+        document.body.appendChild(cursor);
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        document.addEventListener('mousedown', () => {
+            cursor.classList.add('clicking');
+        });
+
+        document.addEventListener('mouseup', () => {
+            cursor.classList.remove('clicking');
+        });
+    </script>
+</body>
+</html>

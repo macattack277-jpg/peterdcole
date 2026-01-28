@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remains of a Rock Wall - Peter D. Cole</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header class="site-header banner">
+        <div class="banner-content">
+            <a href="../index.html" class="site-name">PETER D. COLE</a>
+            <nav class="nav">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../work.html" class="nav-link">Work</a>
+                <a href="#info" class="nav-link">Info</a>
+                <a href="https://cdn.sanity.io/files/cf2wup73/production/71df125e6670152a9466108956775f98da293554.pdf" target="_blank" class="nav-link">Available Works</a>
+                <a href="../contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <section class="artwork-detail">
+        <div class="artwork-container">
+            <div class="artwork-image">
+                <img src="../images/754f9e4ebd4ed692498ba52d607a2994eea4c485-3402x2268.jpg.jpeg" alt="Remains of a Rock Wall">
+            </div>
+            <div class="artwork-info">
+                <h1 class="artwork-title">Remains of a Rock Wall</h1>
+                <p class="artwork-year">1991</p>
+                <div class="artwork-details">
+                    <p class="artwork-materials">Painted and Patinated Bronze, Brass and Copper</p>
+                    <p class="artwork-dimensions">30 x 38 x 8 cms</p>
+                </div>
+                <p>The interplay of elements, such as the bluestone wall, sky, and celestial bodies like the Sun, Mercury, and Venus, reflects on the passage of time. The landscape and the gradual decay seen upon arriving in ??. The reference to the mechanical aspects, particularly in capturing the sun and space, highlights the practical challenges inherent in sculptural compositions. The use of bronze in the composition adds a tactile and enduring quality to the piece Earth and Sky.</p>
+                <a href="../work.html" class="back-link">← Back to Work</a>
+            </div>
+        </div>
+    </section>
+    <script>
+        // Custom Cursor
+        const cursor = document.createElement('div');
+        cursor.className = 'custom-cursor';
+        document.body.appendChild(cursor);
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        document.addEventListener('mousedown', () => {
+            cursor.classList.add('clicking');
+        });
+
+        document.addEventListener('mouseup', () => {
+            cursor.classList.remove('clicking');
+        });
+    </script>
+</body>
+</html>

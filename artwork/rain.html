@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rain - Peter D. Cole</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header class="site-header banner">
+        <div class="banner-content">
+            <a href="../index.html" class="site-name">PETER D. COLE</a>
+            <nav class="nav">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../work.html" class="nav-link">Work</a>
+                <a href="#info" class="nav-link">Info</a>
+                <a href="https://cdn.sanity.io/files/cf2wup73/production/71df125e6670152a9466108956775f98da293554.pdf" target="_blank" class="nav-link">Available Works</a>
+                <a href="../contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <section class="artwork-detail">
+        <div class="artwork-container">
+            <div class="artwork-image">
+                <img src="../images/a8deffe363730c66ca41f2bb2fea2bf1a81602e5-1883x1332.jpg.jpeg" alt="Rain">
+            </div>
+            <div class="artwork-info">
+                <h1 class="artwork-title">Rain</h1>
+                <p class="artwork-year">2007</p>
+                <div class="artwork-details">
+                    <p class="artwork-materials">Painted and Patinated Brass, Bronze and Aluminium</p>
+                    <p class="artwork-dimensions">55 x 130 x 15 cms</p>
+                </div>
+                <p>I believe this artwork was created during my time at Langley, though it encapsulates the essence of living in Kyneton, with a pronounced church-like element, especially notable in the strong yellow cross sitting atop it. While the cross could evoke Malevich's influence, it was more inspired by rainy days, a frequent occurrence in Kyneton. The grey gloss adds a reflective quality. Many of my colours were glossy, and I often used marine paint for its durability and ease of application. The outdoor setting at Langley allowed for convenient spray painting, with the paint setting in the atmosphere, creating a smooth finish without the need for polishing.</p>
+                <a href="../work.html" class="back-link">← Back to Work</a>
+            </div>
+        </div>
+    </section>
+    <script>
+        // Custom Cursor
+        const cursor = document.createElement('div');
+        cursor.className = 'custom-cursor';
+        document.body.appendChild(cursor);
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        document.addEventListener('mousedown', () => {
+            cursor.classList.add('clicking');
+        });
+
+        document.addEventListener('mouseup', () => {
+            cursor.classList.remove('clicking');
+        });
+    </script>
+</body>
+</html>

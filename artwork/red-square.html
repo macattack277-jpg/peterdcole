@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Square - Peter D. Cole</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header class="site-header banner">
+        <div class="banner-content">
+            <a href="../index.html" class="site-name">PETER D. COLE</a>
+            <nav class="nav">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../work.html" class="nav-link">Work</a>
+                <a href="#info" class="nav-link">Info</a>
+                <a href="https://cdn.sanity.io/files/cf2wup73/production/71df125e6670152a9466108956775f98da293554.pdf" target="_blank" class="nav-link">Available Works</a>
+                <a href="../contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <section class="artwork-detail">
+        <div class="artwork-container">
+            <div class="artwork-image">
+                <img src="../images/a38ca80c0b0e60db4455d43c2f024b5771ef4996-1043x723.jpg.jpeg" alt="Red Square">
+            </div>
+            <div class="artwork-info">
+                <h1 class="artwork-title">Red Square</h1>
+                <p class="artwork-year">2006</p>
+                <div class="artwork-details">
+                    <p class="artwork-materials">Painted Steel</p>
+                    <p class="artwork-dimensions">210 x 210 x 210 cms</p>
+                </div>
+                <p>The red square holds personal significance, and while I acknowledge its history, I prefer to approach it from a creative standpoint rather than delve into the well-trodden path of political symbolism.</p>
+                <p>The works of Russian constructivists like Malevich and El Lissitzky and the writings of Aleksei Gan were often discussed and referred to by lecturers during my time at the South Australian School of Art and left a strong impression on me.Reflecting on my artistic journey, I emphasise the importance of starting with a blank slate and working through the creative process. Despite exposure to various artistic narratives and histories, my approach is still rooted in personal exploration and reinterpretation. I often find myself revisiting contemporary art, drawing inspiration from the present while navigating the intersection of urban sculpture and art history.</p>
+                <a href="../work.html" class="back-link">← Back to Work</a>
+            </div>
+        </div>
+    </section>
+    <script>
+        // Custom Cursor
+        const cursor = document.createElement('div');
+        cursor.className = 'custom-cursor';
+        document.body.appendChild(cursor);
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        document.addEventListener('mousedown', () => {
+            cursor.classList.add('clicking');
+        });
+
+        document.addEventListener('mouseup', () => {
+            cursor.classList.remove('clicking');
+        });
+    </script>
+</body>
+</html>

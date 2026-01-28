@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Bench with Pink Form - Peter D. Cole</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header class="site-header banner">
+        <div class="banner-content">
+            <a href="../index.html" class="site-name">PETER D. COLE</a>
+            <nav class="nav">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../work.html" class="nav-link">Work</a>
+                <a href="#info" class="nav-link">Info</a>
+                <a href="https://cdn.sanity.io/files/cf2wup73/production/71df125e6670152a9466108956775f98da293554.pdf" target="_blank" class="nav-link">Available Works</a>
+                <a href="../contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <section class="artwork-detail">
+        <div class="artwork-container">
+            <div class="artwork-image">
+                <img src="../images/c6f8f926328211c17f7a7baa420ae1bd755441eb-3402x2551.jpg.jpeg" alt="Studio Bench with Pink Form">
+            </div>
+            <div class="artwork-info">
+                <h1 class="artwork-title">Studio Bench with Pink Form</h1>
+                <p class="artwork-year">2002</p>
+                <div class="artwork-details">
+                    <p class="artwork-materials">Painted and Patinated Brass, Bronze and Aluminium</p>
+                    <p class="artwork-dimensions">88 x 60 x 28 cms</p>
+                </div>
+                <a href="../work.html" class="back-link">← Back to Work</a>
+            </div>
+        </div>
+        
+        <div class="full-text-section-static">
+            <h2>About</h2>
+            <p>Crafted during my time at Langley, this piece holds references to an earlier space – Woodbine Studio. Central to the piece is a small bench, a pivotal place where I spent most of my time working. The bench is more than just furniture; it's my scale, the starting point where everything takes form. Unlike some sculptors who begin from the ground, I find my beginning on the bench. The sculpture exaggerates the perspective of various elements – forms on the bench, objects leaning against the walls – all reminiscent of the studio environment. For me, the studio is more than just a physical space; it's a place to be and create. This piece, much like others, aims to capture the narrative of the moment – a snapshot of what I'm thinking and feeling during the creative process.</p>
+        </div>
+    </section>
+    <script>
+        // Custom Cursor
+        const cursor = document.createElement('div');
+        cursor.className = 'custom-cursor';
+        document.body.appendChild(cursor);
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        document.addEventListener('mousedown', () => {
+            cursor.classList.add('clicking');
+        });
+
+        document.addEventListener('mouseup', () => {
+            cursor.classList.remove('clicking');
+        });
+    </script>
+</body>
+</html>

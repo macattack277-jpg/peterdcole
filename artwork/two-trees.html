@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Trees - Peter D. Cole</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header class="site-header banner">
+        <div class="banner-content">
+            <a href="../index.html" class="site-name">PETER D. COLE</a>
+            <nav class="nav">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../work.html" class="nav-link">Work</a>
+                <a href="#info" class="nav-link">Info</a>
+                <a href="https://cdn.sanity.io/files/cf2wup73/production/71df125e6670152a9466108956775f98da293554.pdf" target="_blank" class="nav-link">Available Works</a>
+                <a href="../contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <section class="artwork-detail">
+        <div class="artwork-container">
+            <div class="artwork-image">
+                <img src="../images/8eab0e9010131a51be79b821a8adbea55b32841b-2000x1328.jpg.jpeg" alt="Two Trees">
+            </div>
+            <div class="artwork-info">
+                <h1 class="artwork-title">Two Trees</h1>
+                <p class="artwork-year">2008</p>
+                <div class="artwork-details">
+                    <p class="artwork-materials">Painted and Patinated Brass, Aluminium and Wood</p>
+                    <p class="artwork-dimensions">60 x 40 x 15 cms</p>
+                </div>
+                <p>I used to point out a pair of trees to my sons during our drives to Melbourne. The trees always stood out to me, as they were not in the form of typical trees. I told my sons that if you were to draw a tree to look like that, it wouldn't resemble a typical tree, but in fact a square. It became central in this piece, creating a unique juxtaposition with the tree form and the moon hovering above.</p>
+                <a href="../work.html" class="back-link">← Back to Work</a>
+            </div>
+        </div>
+    </section>
+    <script>
+        // Custom Cursor
+        const cursor = document.createElement('div');
+        cursor.className = 'custom-cursor';
+        document.body.appendChild(cursor);
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        document.addEventListener('mousedown', () => {
+            cursor.classList.add('clicking');
+        });
+
+        document.addEventListener('mouseup', () => {
+            cursor.classList.remove('clicking');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peter D. Cole - Artist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header banner">
+        <div class="banner-content">
+            <a href="index.html" class="site-name">PETER D. COLE</a>
+            <nav class="nav">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="work.html" class="nav-link">Work</a>
+                <a href="info.html" class="nav-link">Info</a>
+                <a href="https://cdn.sanity.io/files/cf2wup73/production/71df125e6670152a9466108956775f98da293554.pdf" target="_blank" class="nav-link">Available Works</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero-slideshow">
+            <div class="hero-slide active" style="background-image: url('images/c419185ee0fd0c1d0ed4a12675afe8f799a1172e-1638x2048.jpg.jpeg');"></div>
+            <div class="hero-slide" style="background-image: url('images/209869ee356ecfbf0caa87bcc5894c1616a5ddb4-2048x1638.jpg.jpeg');"></div>
+            <div class="hero-slide" style="background-image: url('images/019307d514bdbd749b766980a347cb701f9cf87f-3402x3402.jpg.jpeg');"></div>
+            <div class="hero-slide" style="background-image: url('images/c6f8f926328211c17f7a7baa420ae1bd755441eb-3402x2551.jpg.jpeg');"></div>
+            <div class="hero-slide" style="background-image: url('images/56cdd2e26acf21b35d1bdd82d099c43b81829e8c-3402x4197.jpg.jpeg');"></div>
+            <div class="hero-slide" style="background-image: url('images/2015cdab24fd1104edf6d202d5324a28edf9a827-3402x2717.jpg.jpeg');"></div>
+            <div class="hero-slide" style="background-image: url('images/a8deffe363730c66ca41f2bb2fea2bf1a81602e5-1883x1332.jpg.jpeg');"></div>
+            <div class="hero-slide" style="background-image: url('images/c6f4aadc8dae59bcc34dce7f5fdca92a15df6788-3402x3085.jpg.jpeg');"></div>
+            <div class="hero-slide" style="background-image: url('images/8eab0e9010131a51be79b821a8adbea55b32841b-2000x1328.jpg.jpeg');"></div>
+            <div class="hero-slide" style="background-image: url('images/ea778ee0773570051c5d50a7f0a7df5e47f9a043-3402x2295.jpg.jpeg');"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="name-first animate-slide-in">PETER</span>
+                <span class="name-middle animate-slide-in delay-1">D.</span>
+                <span class="name-last animate-slide-in delay-2">COLE</span>
+            </h1>
+            <p class="hero-location animate-fade-in delay-3">KYNETON, VICTORIA</p>
+        </div>
+    </section>
+
+    <script>
+        // Custom Cursor
+        const cursor = document.createElement('div');
+        cursor.className = 'custom-cursor';
+        document.body.appendChild(cursor);
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        document.addEventListener('mousedown', () => {
+            cursor.classList.add('clicking');
+        });
+
+        document.addEventListener('mouseup', () => {
+            cursor.classList.remove('clicking');
+        });
+
+        // Background slideshow
+        let currentHeroSlide = 0;
+        const heroSlides = document.querySelectorAll('.hero-slide');
+        
+        function showHeroSlide(index) {
+            heroSlides.forEach(slide => slide.classList.remove('active'));
+            heroSlides[index].classList.add('active');
+        }
+        
+        function nextHeroSlide() {
+            currentHeroSlide = (currentHeroSlide + 1) % heroSlides.length;
+            showHeroSlide(currentHeroSlide);
+        }
+        
+        setInterval(nextHeroSlide, 5000);
+
+        // Parallax effect
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero');
+            if (hero) {
+                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+    </script>
+</body>
+</html>
+</html>

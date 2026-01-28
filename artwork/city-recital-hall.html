@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Recital Hall Sydney - Peter D. Cole</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header class="site-header banner">
+        <div class="banner-content">
+            <a href="../index.html" class="site-name">PETER D. COLE</a>
+            <nav class="nav">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../work.html" class="nav-link">Work</a>
+                <a href="#info" class="nav-link">Info</a>
+                <a href="https://cdn.sanity.io/files/cf2wup73/production/71df125e6670152a9466108956775f98da293554.pdf" target="_blank" class="nav-link">Available Works</a>
+                <a href="../contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <section class="artwork-detail">
+        <div class="artwork-container">
+            <div class="artwork-image">
+                <img src="../images/bacebfb2f208b319a3c370ac7489821008537bd9-3402x3900.jpg.jpeg" alt="City Recital Hall Sydney">
+            </div>
+            <div class="artwork-info">
+                <h1 class="artwork-title">Commissioned for City Recital Hall Sydney</h1>
+                <p class="artwork-year">1998</p>
+                <div class="artwork-details">
+                    <p class="artwork-materials">Painted Brass and Aluminium</p>
+                    <p class="artwork-dimensions">400 x 200 x 50 cms</p>
+                </div>
+                <p>This takes me back. I remember the photographer visiting, Earl Carter I believe. He captured this moment at the studio before the work was off to be painted. Painting a sculpture is a delicate process, as disassembly is not an option. That's why the role of drawing is crucial. It's a balance of careful planning and execution.</p>
+                <a href="../work.html" class="back-link">← Back to Work</a>
+            </div>
+        </div>
+    </section>
+    <script>
+        // Custom Cursor
+        const cursor = document.createElement('div');
+        cursor.className = 'custom-cursor';
+        document.body.appendChild(cursor);
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        document.addEventListener('mousedown', () => {
+            cursor.classList.add('clicking');
+        });
+
+        document.addEventListener('mouseup', () => {
+            cursor.classList.remove('clicking');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelly 2 - Peter D. Cole</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header class="site-header banner">
+        <div class="banner-content">
+            <a href="../index.html" class="site-name">PETER D. COLE</a>
+            <nav class="nav">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../work.html" class="nav-link">Work</a>
+                <a href="#info" class="nav-link">Info</a>
+                <a href="https://cdn.sanity.io/files/cf2wup73/production/71df125e6670152a9466108956775f98da293554.pdf" target="_blank" class="nav-link">Available Works</a>
+                <a href="../contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <section class="artwork-detail">
+        <div class="artwork-container">
+            <div class="artwork-image">
+                <img src="../images/c6f4aadc8dae59bcc34dce7f5fdca92a15df6788-3402x3085.jpg.jpeg" alt="Kelly 2">
+            </div>
+            <div class="artwork-info">
+                <h1 class="artwork-title">Kelly 2</h1>
+                <p class="artwork-year">2000</p>
+                <div class="artwork-details">
+                    <p class="artwork-materials">Pastel on Paper</p>
+                    <p class="artwork-dimensions">121 x 133 cms</p>
+                </div>
+                <p>I decided to enter a competition, choosing to portray Kelly's wife—an often overlooked figure in discussions about Ned Kelly. The piece took an unexpected turn, deviating from its initial portrait concept into a representation dominated by semi-curves. The connection between the project and my grandfather's blacksmithing profession became clear, inspiring many drawings and providing insight into the techniques involved.</p>
+                <a href="../work.html" class="back-link">← Back to Work</a>
+            </div>
+        </div>
+    </section>
+    <script>
+        // Custom Cursor
+        const cursor = document.createElement('div');
+        cursor.className = 'custom-cursor';
+        document.body.appendChild(cursor);
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        document.addEventListener('mousedown', () => {
+            cursor.classList.add('clicking');
+        });
+
+        document.addEventListener('mouseup', () => {
+            cursor.classList.remove('clicking');
+        });
+    </script>
+</body>
+</html>

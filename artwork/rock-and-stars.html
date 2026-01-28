@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock and Stars - Peter D. Cole</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header class="site-header banner">
+        <div class="banner-content">
+            <a href="../index.html" class="site-name">PETER D. COLE</a>
+            <nav class="nav">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../work.html" class="nav-link">Work</a>
+                <a href="#info" class="nav-link">Info</a>
+                <a href="https://cdn.sanity.io/files/cf2wup73/production/71df125e6670152a9466108956775f98da293554.pdf" target="_blank" class="nav-link">Available Works</a>
+                <a href="../contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <section class="artwork-detail">
+        <div class="artwork-container">
+            <div class="artwork-image">
+                <img src="../images/56cdd2e26acf21b35d1bdd82d099c43b81829e8c-3402x4197.jpg.jpeg" alt="Rock and Stars">
+            </div>
+            <div class="artwork-info">
+                <h1 class="artwork-title">Rock and Stars</h1>
+                <p class="artwork-year">1997</p>
+                <div class="artwork-details">
+                    <p class="artwork-materials">Painted and Patinated Brass, Bronze and Stainless Steel</p>
+                    <p class="artwork-dimensions">2045 x 975 x 50 cms</p>
+                </div>
+                <p>This piece marks an early phase in my artistic journey – an exploration of landscape elements. You can sense a loose arrangement of elements, a less defined structure compared to my later works. The symbols, though recognisable, are scattered, and I felt the need to reorder them for better cohesion. It was a commissioned piece in the mid 80's by two photographers who had a studio in South Melbourne. The trend of commissioned pieces continued, it felt like the right time for such creative collaborations.</p>
+                <a href="../work.html" class="back-link">← Back to Work</a>
+            </div>
+        </div>
+    </section>
+    <script>
+        // Custom Cursor
+        const cursor = document.createElement('div');
+        cursor.className = 'custom-cursor';
+        document.body.appendChild(cursor);
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        document.addEventListener('mousedown', () => {
+            cursor.classList.add('clicking');
+        });
+
+        document.addEventListener('mouseup', () => {
+            cursor.classList.remove('clicking');
+        });
+    </script>
+</body>
+</html>

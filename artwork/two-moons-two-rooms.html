@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two moons - Two rooms - Peter D. Cole</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header class="site-header banner">
+        <div class="banner-content">
+            <a href="../index.html" class="site-name">PETER D. COLE</a>
+            <nav class="nav">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../work.html" class="nav-link">Work</a>
+                <a href="#info" class="nav-link">Info</a>
+                <a href="https://cdn.sanity.io/files/cf2wup73/production/71df125e6670152a9466108956775f98da293554.pdf" target="_blank" class="nav-link">Available Works</a>
+                <a href="../contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <section class="artwork-detail">
+        <div class="artwork-container">
+            <div class="artwork-image">
+                <img src="../images/38eaf9d01f2ba762cfce97122dc5e7427c5ce860-3072x2048.jpg.jpeg" alt="Two moons - Two rooms">
+            </div>
+            <div class="artwork-info">
+                <h1 class="artwork-title">Two moons - Two rooms</h1>
+                <p class="artwork-year">1996</p>
+                <div class="artwork-details">
+                    <p class="artwork-materials">Painted and Patinated Brass, Copper and Aluminium</p>
+                    <p class="artwork-dimensions">242 x 120 x 10 cms</p>
+                </div>
+                <p>"Two moons, Two rooms", captures the repetitive essence of daily existence. It's a reflection on the day after day after day cycle, a visual exploration of the ongoing nature of life. The variation in the colour of the square symbolises different days at my studio, adding to the narrative of continuity, the relentless march of time and the subtle shifts in my daily environment.</p>
+                <a href="../work.html" class="back-link">← Back to Work</a>
+            </div>
+        </div>
+    </section>
+    <script>
+        // Custom Cursor
+        const cursor = document.createElement('div');
+        cursor.className = 'custom-cursor';
+        document.body.appendChild(cursor);
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        document.addEventListener('mousedown', () => {
+            cursor.classList.add('clicking');
+        });
+
+        document.addEventListener('mouseup', () => {
+            cursor.classList.remove('clicking');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images from a Southern Night 2 - Peter D. Cole</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header class="site-header banner">
+        <div class="banner-content">
+            <a href="../index.html" class="site-name">PETER D. COLE</a>
+            <nav class="nav">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="../work.html" class="nav-link">Work</a>
+                <a href="#info" class="nav-link">Info</a>
+                <a href="https://cdn.sanity.io/files/cf2wup73/production/71df125e6670152a9466108956775f98da293554.pdf" target="_blank" class="nav-link">Available Works</a>
+                <a href="../contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <section class="artwork-detail">
+        <div class="artwork-container">
+            <div class="artwork-image">
+                <img src="../images/ea778ee0773570051c5d50a7f0a7df5e47f9a043-3402x2295.jpg.jpeg" alt="Images from a Southern Night 2">
+            </div>
+            <div class="artwork-info">
+                <h1 class="artwork-title">Images from a Southern Night 2</h1>
+                <p class="artwork-year">1991</p>
+                <div class="artwork-details">
+                    <p class="artwork-materials">Pastel on Paper</p>
+                    <p class="artwork-dimensions">80 x 120 cms</p>
+                </div>
+                <p>What stands out to me the most, looking at this work now, is a reflection on the Japanese practice Shimenawa; binding sheaths of grass to create forms and archetypes. The nature of this process, where bound structures need renewal, intrigued me. This binding becomes a cosmogony for existence, a celebration of renewal and maintenance, a constant evolution that resonates with the impermanence of life. It evolves into the entire town or village taking part in this renewal process, transforming into a festival featuring these extraordinary structures. I found the story fascinating. When you see how this tradition has changed over millennia, it becomes an incredible process of maintenance, a ritualised practice.</p>
+                <a href="../work.html" class="back-link">← Back to Work</a>
+            </div>
+        </div>
+    </section>
+    <script>
+        // Custom Cursor
+        const cursor = document.createElement('div');
+        cursor.className = 'custom-cursor';
+        document.body.appendChild(cursor);
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        document.addEventListener('mousedown', () => {
+            cursor.classList.add('clicking');
+        });
+
+        document.addEventListener('mouseup', () => {
+            cursor.classList.remove('clicking');
+        });
+    </script>
+</body>
+</html>
